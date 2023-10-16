@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: monospace;
+            background-color: #111;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        button{
+            margin: 10px;
+            font-size: 30px;
+            margin-left: 90px;
+            outline: none;
+            border: none;
+            background-color: yellow;
+            color: red;
+            box-shadow: inset 0 0 0 0 black;
+            color: black;
+            transition: color .3s ease-in-out, box-shadow 3s ease-in-out;
+        }
+        button:hover{
+            box-shadow: inset 200px 0 0 0 red;
+            color: white;
+            transition: 4s ease-in-out;
+        }
+        h2{
+            font-size: 35px;
+            margin-left: 10px;
+        }
+        .container{
+            box-shadow: 3px 3px 10px;
+            width: 600px;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 45px;
+            background-color: black;
+            color: white;
+            border-radius: 100px 10px;
+            width: 600px;
+            text-align: center;
+        }
+        h1:hover{
+            transform: scale(1.2);
+            transition: 4s ease;
+        }
+        span{
+            color: red;
+        }
+        #sonuc{
+            color: blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş, Kağıt, Makas Oyunu</title>
+</head>
+<body>
+    <h1>Taş, Kağıt, Makas Oyunu</h1>
+<div class="container">
+    <div class="h2">
+        <h2>Bilgisayar Seçimi: <span id="pc-secimi"></span></h2>
+        <h2>Oyuncu Seçimi: <span id="player-secimi"></span></h2>
+        <h2>Sonuç: <span id="sonuc"></span></h2>
+    </div>
+    <div class="btn">
+        <button id="tas">Taş</button>
+        <button id="kagit">Kağıt</button>
+        <button id="makas">Makas</button>
+    </div>
+</div>
+    <script src="tasKagıtMakas.js"></script>
+</body>
+</html>
